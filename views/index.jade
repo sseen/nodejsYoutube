@@ -1,5 +1,10 @@
 extends layout
 
 block content
+
   h1= title
   p Welcome to #{title}
+  form(action='/getUrl',method='post')
+    input#input(type='text', name='u2url')
+    input(type='submit',value='click')
+
